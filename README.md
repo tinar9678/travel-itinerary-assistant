@@ -1,13 +1,13 @@
-### Meet Lucy, your personal travel agent!
+# Meet Lucy, your personal travel agent!
 
 Add your destination and number of days, and Lucy will generate the itinerary for you! 
 
 ## Getting Started
 
-# Run Flask server
+### Run Flask server
 Install a virtual environment and then flask run
 
-# Run the UI 
+### Run the UI 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
