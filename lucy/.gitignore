@@ -15,6 +15,18 @@
 # production
 /build
 
+#python
+venv/
+.venv
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+
 # misc
 .DS_Store
 *.pem

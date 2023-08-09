@@ -12,7 +12,7 @@ export default function SearchComponent() {
     const onSubmit = async (e) => {
         e.preventDefault();
         // fetch from python server here.
-        const response = await fetch('', {
+        const response = await fetch('http://127.0.0.1:5000/', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -21,7 +21,6 @@ export default function SearchComponent() {
                 message: inputString + "*" + filterselectedOption,
             })
         });
-
         const json = await response.json();
         console.log(json.data); // TODO(tinaryu): Set output itinerary component
     }

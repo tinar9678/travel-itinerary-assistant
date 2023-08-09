@@ -4,6 +4,11 @@ Add your destination and number of days, and Lucy will generate the itinerary fo
 
 ## Getting Started
 
+# Run Flask server
+Install a virtual environment and then flask run
+
+# Run the UI 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
