@@ -1,19 +1,18 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
 }
 
-.description {
+.logo {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white; 
 }
