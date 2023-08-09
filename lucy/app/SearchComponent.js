@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './SearchComponent.css'
 
-export default function SearchComponent() {
+export default function SearchComponent({setItinerary}) {
     const [inputString, setInputString] = useState("");
     const [filterselectedOption, setFilterSelectedOption] = useState(DURATIONS[0]);
     
@@ -22,7 +22,7 @@ export default function SearchComponent() {
             })
         });
         const json = await response.json();
-        console.log(json.data); // TODO(tinaryu): Set output itinerary component
+        setItinerary(json.data);
     }
 
     return (

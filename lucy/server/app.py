@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route("/", methods=("GET", "POST"))
 def index():
@@ -18,6 +18,7 @@ def index():
             model="text-davinci-003",
             prompt=generate_prompt(location, duration),
             temperature=0.6,
+            max_tokens=200,
         )
         return json.dumps({'data': response.choices[0].text})
 
